@@ -10,5 +10,12 @@ describe 'finding the factorals' do
 	end
 end
 
-describe 'Converting a sentence to Pig Latin' do
+describe 'Has str reversed' do
+	it 'returns cinaciB divaD when David Bicanic is entered' do 
+		expect(FirstReverse("David Bicanic")).to eq "cinaciB divaD"
+	end
+
+	it 'returns dlroW olleH when Hello World is entered' do 
+		expect(FirstReverse("Hello World")).to eq "dlroW olleH"
+	end
 end
