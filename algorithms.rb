@@ -31,4 +31,22 @@ def FirstReverse(str)
 end
    
 # keep this function call here    
-# puts FirstReverse("David Bicanic")  
+# puts FirstReverse("David Bicanic") 
+
+# Using the Ruby language, have the function LetterChanges(str) take the str parameter being passed and modify it using the following algorithm. Replace every letter in the string with the letter following it in the alphabet (ie. c becomes d, z becomes a). Then capitalize every vowel in this new string (a, e, i, o, u) and finally return this modified string.  
+
+def LetterChanges(str)
+	result = str.gsub(/[a-zA-Z]/) do |d|
+		if d == 'z' || d == 'Z'
+			'a'
+		else
+			(d.ord + 1).chr
+		end
+	end
+
+		return result.tr!('aeiou', 'AEIOU')
+         
+end
+   
+# keep this function call here    
+puts LetterChanges("hello") 

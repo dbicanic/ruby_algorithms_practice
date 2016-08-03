@@ -19,3 +19,13 @@ describe 'Has str reversed' do
 		expect(FirstReverse("Hello World")).to eq "dlroW olleH"
 	end
 end
+
+describe 'Has letters changed' do 
+	it 'returns Ifmmp*3 when hello*3 is entered' do 
+		expect(LetterChanges("hello*3")).to eq "Ifmmp*3"
+	end
+
+	it 'returns gvO Ujnft! when fun times! is entered' do 
+		expect(LetterChanges("fun times!")).to eq "gvO Ujnft!"
+	end
+end
