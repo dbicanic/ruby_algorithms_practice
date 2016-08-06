@@ -49,4 +49,35 @@ def LetterChanges(str)
 end
    
 # keep this function call here    
-puts LetterChanges("hello") 
+# puts LetterChanges("hello")
+
+# Using the Ruby language, have the function SimpleAdding(num) add up all the numbers from 1 to num. For the test cases, the parameter num will be any number from 1 to 1000
+
+def SimpleAdding(num)
+
+  # code goes here
+  return num 
+         
+end
+   
+# keep this function call here    
+puts SimpleAdding(12)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
