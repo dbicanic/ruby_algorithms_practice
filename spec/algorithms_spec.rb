@@ -29,3 +29,13 @@ describe 'Has letters changed' do
 		expect(LetterChanges("fun times!")).to eq "gvO Ujnft!"
 	end
 end
+
+describe 'Adds up all the numbers' do 
+	it 'returns 78 when 12 is entered' do 
+		expect(SimpleAdding(12)).to eq 78
+	end
+
+	it 'returns 9870 when 140 is entered' do 
+		expect(SimpleAdding(140)).to eq 9870
+	end
+end
