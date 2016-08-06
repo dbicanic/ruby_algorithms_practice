@@ -73,13 +73,18 @@ end
 # Using the Ruby language, have the function LetterCapitalize(str) take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space. 
 
 def LetterCapitalize(str)
+	splitStr = str.split(" ")
 
-  return str 
+	splitStr.each do |d|
+		d.capitalize!
+	end
+
+  return splitStr.join(" ")
          
 end
    
 # keep this function call here    
-# puts LetterCapitalize(STDIN.gets)  
+# puts LetterCapitalize("hello world")  
 
 
 
