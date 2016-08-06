@@ -55,13 +55,20 @@ end
 
 def SimpleAdding(num)
 
-  # code goes here
-  return num 
+	i = num
+	newNum = 0
+
+	while i > 0 do 
+		newNum = i + newNum
+		i -= 1
+	end
+  
+  return newNum 
          
 end
    
 # keep this function call here    
-puts SimpleAdding(12)  
+# puts SimpleAdding(12)  
 
 
 
