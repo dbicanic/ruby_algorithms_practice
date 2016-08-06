@@ -39,3 +39,13 @@ describe 'Adds up all the numbers' do
 		expect(SimpleAdding(140)).to eq 9870
 	end
 end
+
+describe 'Capitalizes the first letter of each word' do 
+	it 'returns Hello World when hello world is entered' do 
+		expect(LetterCapitalize("hello world")).to eq "Hello World"
+	end
+
+	it 'returns David Bicanic Is Awesome when david bicanic is awesome is entered' do 
+		expect(LetterCapitalize("david bicanic is awesome")).to eq "David Bicanic Is Awesome"
+	end
+end
